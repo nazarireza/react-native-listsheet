@@ -100,7 +100,7 @@ class ListSheet extends Component {
 		const { selectedItems } = this.state;
 
 		return (
-			<Modal isVisible={show} useNativeDriver style={styles.container}>
+			<Modal onBackdropPress={onDismiss} hideModalContentWhileAnimating isVisible={show} useNativeDriver style={styles.container}>
 				<View style={[styles.listContainer]}>
 					{title && <Text style={styles.titleText}>{title}</Text>}
 					{description && (
